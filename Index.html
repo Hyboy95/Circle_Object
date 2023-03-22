@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+  class Circle {
+    radius;
+    color;
+    constructor (radius,color) {
+        this.radius = radius;
+        this.color = color;
+    }
+
+    getRadius () {
+        return this.radius;
+    }
+    getArea () {
+          return `Diện tích hình tròn bán kính ${this.radius} là S = ${this.radius * this.radius * Math.PI}`;
+    }
+    setRadius (radius) {
+        this.radius = radius;
+    }
+      setColor (color) {
+          this.color = color;
+      }
+  }
+
+  let new_circle = new Circle(4,"red");
+  console.log(new_circle);
+  console.log(new_circle.getRadius());
+  console.log(new_circle.getArea());
+  new_circle.setRadius(5);
+  console.log(new_circle);
+  new_circle.setColor("orange");
+  console.log(new_circle);
+</script>
